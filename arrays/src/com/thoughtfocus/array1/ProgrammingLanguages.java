@@ -6,7 +6,10 @@ public class ProgrammingLanguages {
 	
 	public void printAll() {
 		for (int index = 0; index <languages.length;index++) {
-			System.out.println(languages[index]);
+			if (languages[index]!= null) {
+				System.out.println(languages[index]);		
+			}
+			
 		}
 	}
 	public boolean save(String language) {
@@ -21,12 +24,31 @@ public class ProgrammingLanguages {
 	}
 	public String delete(String language) {
 		for (int index = 0; index < languages.length;index++) {
-			if(languages[index].equals(language)) {
-				languages[index] = null;
-				return "programming language is deleted";
-			}	
+			if (languages[index]!= null) {
+				if(languages[index].equals(language)) {
+					languages[index] = null;
+					return "programming language is deleted";
+				}	
+				
+			}
+			
 		}
 		return "programming language is not deleted";
 	}
+	public String update(String oldName,String newName) {
+		for (int index = 0; index < languages.length;index++) {
+			if (languages[index]!= null) {
+				if(languages[index].equals(oldName)) {
+					languages[index] = newName;
+					return "programming language is Updated";
+				}	
+				
+			}
+			
+		}
+		return "programming language is not updated";
+	}
+	
+	
 
 }

@@ -6,7 +6,9 @@ public class Months {
 	
 	public void printAll() {
 		for (int index = 0; index <months.length;index++) {
-			System.out.println(months[index]);
+			if (months[index]!= null) {
+				System.out.println(months[index]);
+			}
 		}
 	}
 	public boolean save(String month) {
@@ -21,11 +23,27 @@ public class Months {
 	}
 	public String delete(String month) {
 		for (int index = 0; index < months.length;index++) {
-			if(months[index].equals(month)) {
-				months[index] = null;
-				return "month deleted";
-			}	
-		}
+			if(months[index] != null) {
+				if(months[index].equals(month)) {
+					months[index] = null;
+					return "month deleted";
+				}	
+				
+			}
+		
+		}	
 		return "month not deleted";
+	}
+	public String update(String oldName,String newName) {
+		for (int index = 0;index<months.length;index++) {
+			if(months[index] != null) {
+				if(months[index].equals(oldName)) {
+					months[index] = newName;
+					return "Month is updated";
+				}
+			}
+		
+		}
+		return "Month is not updated";
 	}
 }

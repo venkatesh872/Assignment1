@@ -13,17 +13,26 @@ public class Tester {
 		months.save("July");
 		months.save("August");
 		months.save("September");
-		months.save("October");
-		months.save("November");
+		months.save("Oct");
+		months.save("Nov");
 		months.save("December");
+		System.out.println("months added are:");
 		
 		months.printAll();
 		
 		System.out.println("*****************************************");
 		
 		String remove = months.delete("Jan");
+		String remove1 = months.delete("Feb");
+		System.out.println(remove);
+		System.out.println(remove1);
+
+		months.printAll();
 		
-	
+		System.out.println("*******************************************");
+		System.out.println("Updated months are:");
+		months.update("Oct","October");
+		months.update("Nov", "November");
 		months.printAll();
 	}
 }

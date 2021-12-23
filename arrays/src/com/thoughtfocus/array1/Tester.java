@@ -16,13 +16,23 @@ public class Tester {
 		languages.save("REACT JS");
 		languages.save("ANGULAR JS");
 		
+		System.out.println("Programming languages are added:");
+		
 		languages.printAll();
 		
 		System.out.println("*****************************************");
-		
 		String remove = languages.delete("REACT JS");
+		String remove1 = languages.delete("NODE JS");
+		
+		System.out.println(remove);
+		System.out.println(remove1);
 		
 	
+		languages.printAll();
+		System.out.println("*******************************************");
+		System.out.println("Updated Programming laguages are:");
+		languages.update("SQL","MySQL");
+		languages.update("JAVA", "CORE JAVA");
 		languages.printAll();
 	}
 }
