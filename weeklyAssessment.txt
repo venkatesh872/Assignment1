@@ -1,0 +1,121 @@
+1.output:NullPointerException.
+
+
+
+2.Exception:An exception is an event,Which occurs during the execution of a program.
+  ExceptionHandling:It is the Mechanism to handle the runtime errors ,So that the normal flow 
+  of the application can be maintained.
+   Ways we can handle exception:try ,catch,throw,throws and finally.
+
+
+
+3.CustomException:
+             Java custom exceptions are used to customize the exception according to user need.
+
+  Reason for custom exception:these can store additional information,provide utility methods that can
+                               be used to handle or present the exception to a user.
+
+
+
+4.Encapsulation:
+               The Mechanism of wrapping the data and methods together asa single unit.
+   Rules for encapsulation:
+                          1)Class shold be public
+                          2)variables should be private.
+                          3)contain getters and setters
+                          4)atleast one Constructor method
+                           5)Class should not be final
+
+
+
+
+
+5)Polymorphism:
+             Polymorphsim is the ability of an object to take many forms.
+             perform the same action in many different ways.
+   Types of polymorhism:
+                       1.CompileTimePolymorphism(Method Overloading)
+                       2.RuntimePolymorphism(Method Overriding)
+
+
+
+6)Overloading: 
+            In java, two or more methods may have the same name,If they differ in parameters.
+             (different of parameters,different type of parameters)
+    Example:class Add{  
+	static int add(int a, int b){
+	return a+b;
+	}  
+	static double add(double a, double b){
+	return a+b;
+	}  
+	}  
+	class TestOverloading{  
+	public static void main(String[] args){  
+	System.out.println(Adder.add(9,9));  
+	System.out.println(Adder.add(45.9,12.6));  
+	}}
+
+
+
+7)Overriding:
+            if child class has the same method as declared in the parent class,it is known as the method overriding.
+
+   Example:class Human{
+   		public void play()
+  		 {
+   		   System.out.println("Human is playing");
+  		 }
+		}
+		class Boy extends Human{
+
+  	 public void eat(){
+     		 System.out.println("Boy is playing");
+  	 }
+   	public static void main( String args[]) {
+   	   Boy obj = new Boy();
+    
+   	   obj.play();
+   	}
+	}
+
+
+
+
+8)output:args
+
+
+9)No Output.
+
+
+10)X-workx provide java Enterprise application training.
+
+
+11)Abstraction:
+           The process of exposing all the necessary details and hiding the rest.
+       We can achieve abstraction in two ways:
+                                             1.Using Abstract Class
+                                             2.Using Interface
+
+      Using Interface We achieve 100% abstraction.
+
+
+
+12)two types:Static and instance initializers
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                             
+                                  
