@@ -40,14 +40,14 @@ public class MobileDAO extends Mobiles {
 		for (int index = 0; index < mobileDto.length; index++) {
 			if (mobileDto[index] != null) {
 				if (mobileDto[index].getMobileId() == mobileId) {
-					MobileDTO obj = mobileDto[index];
+					MobileDTO deleted = mobileDto[index];
 					mobileDto[index] = null;
-					return obj;
+					return deleted;
 				}
 			}
 		}
-		DeleteMobileIdException deleteException = new DeleteMobileIdException();
-		throw deleteException;
+		DeleteMobileIdException deleteMobileIdException = new DeleteMobileIdException();
+		throw deleteMobileIdException;
 	}
 
 	@Override
@@ -56,13 +56,13 @@ public class MobileDAO extends Mobiles {
 			if (mobileDto[index] != null) {
 				if (mobileDto[index].getSerialNumber() == oldSerailNumber) {
 					mobileDto[index].setSerialNumber(newSerailNumber);
-					MobileDTO updated = mobileDto[index];
-					return updated;
+					MobileDTO update = mobileDto[index];
+					return update;
 				}
 			}
 		}
-		UpdateBySerialNumberException updateException = new UpdateBySerialNumberException();
-		throw updateException;
+		UpdateBySerialNumberException updateBySerialException = new UpdateBySerialNumberException();
+		throw updateBySerialException;
 	}
 
 }

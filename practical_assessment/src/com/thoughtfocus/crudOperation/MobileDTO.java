@@ -9,7 +9,6 @@ public class MobileDTO {
 	private long serialNumber;
 	private byte noOfCamera;
 
-
 	public long getMobileId() {
 		return mobileId;
 	}
