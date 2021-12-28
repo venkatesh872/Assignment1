@@ -74,7 +74,7 @@ public class AccountHolderDAO {
 				return newBalance;
 			}
 		}
-		return 0.00f;
+		return accountNumber ;
 	}
 
 	public float withdraw(float amount, long accountNumber) {
@@ -87,7 +87,7 @@ public class AccountHolderDAO {
 				}
 			}
 		}
-		return 0.00f;
+		return accountNumber;
 	}
 	public void printAll() {
 		for (int index = 0; index < dtos.size(); index++) {
