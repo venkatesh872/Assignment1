@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding new Employee Page</title>
+    <link rel="stylesheet" href="css/login.css">
+    
+
+</head>
+<body>
+    
+    <div>
+        <div>
+            <header><a href="http://127.0.0.1:5500/home.html"><img 
+              
+                src="https://pbs.twimg.com/profile_images/978177802116583424/C2DKfeWB_400x400.jpg" class="logo-img"></a>
+                  THOUGHT FOCUS
+                  <span style="font-size: 15px; position: absolute; right: 20px; top:10px ;"><a href="https://www.facebook.com/" target="_blank"><img style="height: 30px; width: 30px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/640px-2021_Facebook_icon.svg.png"></a></span></br>
+                  <span style="font-size: 15px; position: absolute; right: 20px; top:40%"><a href="https://web.telegram.org/z/" target="_blank"><img style="height: 30px; width: 30px;" src="https://1000logos.net/wp-content/uploads/2021/04/Telegram-logo.png"></a></span></br>
+                  <span style="font-size: 15px;position: absolute; right: 20px; top: 65%;" ><a href="https://www.linkedin.com/" target="_blank"><img style="height: 30px; width: 30px;" src="https://cdn-icons-png.flaticon.com/512/174/174857.png"></a></span></header>
+
+        </div>
+        <div style="position: absolute; text-align: center; margin-top: 150px; background-color:olive; height: 50px; width:100%;">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav" style="text-align: center; padding-top: 20px;">
+                    <a class="nav-link active" href="http://127.0.0.1:5500/home.html">
+                      Home
+                      
+                    </a>
+                    <a class="nav-link" href="http://127.0.0.1:5500/viewAllEmp.html" style="padding: 20px;">View</a>
+                    <a class="nav-link" href="http://127.0.0.1:5500/removeEmp.html" style="padding: 20px;">Remove</a>
+                    <a class="nav-link" href="http://127.0.0.1:5500/seacrhEmp.html" style="padding: 20px;">Search</a>
+                    <span class="navbar-date"></span>
+            
+                  </div>
+                </div>
+              </nav>
+              
+
+        <div class="form-container">
+            <form id="formid">
+              <div class="input-group addemp">
+                  <h1>Adding Employee Details</h1>
+                <span class="input-group-text">EmployeeId</span>
+                <input type="number" aria-label="First name" class="form-control Eid" />
+              </div>
+              <span id="idmsg" class="validations"></span>
+      
+              <div class="input-group addemp">
+                <span class="input-group-text">Name</span>
+                <input
+                  type="text"
+                  aria-label="First name"
+                  class="form-control name"
+                />
+              </div>
+              <span id="namemsg" class="validations"></span>
+      
+              <div class="input-group addemp">
+                <span class="input-group-text">salary</span>
+                <input
+                  type="number"
+                  aria-label="First name"
+                  class="form-control salary"
+                />
+              </div>
+              <span id="salarymsg" class="validations"></span>
+      
+              <div class="input-group addemp">
+                <span class="input-group-text">Department</span>
+                <select type="" aria-label="First name" class="form-control" id="dept">
+                  <option selected>IT</option>
+                  <option>HR</option>
+                  <option>Admin</option>
+                  <option>Account Manager</option>
+                </select>
+              </div>
+              <div class="input-group addemp">
+                <span class="input-group-text">Skill</span>
+                <select type="text" aria-label="First name" class="form-control" id="skill">
+                  <option selected>Java</option>
+                  <option>HTML</option>
+                  <option>SQL</option>
+                  <option>UI</option>
+                  <option>Angular</option>
+                  <option>AI</option>
+                  <option>Full stack</option>
+                </select>
+              </div>
+              <div>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary buttons"
+                  id="add"
+                  style="background-color: cadetblue; padding: 6px; border-radius:9px ; width:80px"
+                >
+                  Add
+                </button>
+                <input type="reset" class="btn btn-outline-info buttons"style="background-color: red; padding: 6px; border-radius:9px ; width:80px" />
+              </div>
+            </form>
+            <span id="msg-status"></span>
+          </div>
+          
+          <div class="footer-section" style="position:fixed; ">
+            All Rights @2022
+    
+        </div>
+            
+        
+      
+         
+
+
+
+    <script src="js/addEmployee.js"></script>
+</body>
+</html>

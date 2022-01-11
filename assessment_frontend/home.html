@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/login.css">
+    
+</head>
+<body>
+   
+    <div>
+        <div>
+            <header>
+              <a href="http://127.0.0.1:5500/home.html"><img 
+              
+              src="https://pbs.twimg.com/profile_images/978177802116583424/C2DKfeWB_400x400.jpg" class="logo-img"></a>
+                THOUGHT FOCUS
+                <span style="font-size: 15px; position: absolute; right: 20px; top:10px ;"><a href="https://www.facebook.com/" target="_blank"><img style="height: 30px; width: 30px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/640px-2021_Facebook_icon.svg.png"></a></span></br>
+                <span style="font-size: 15px; position: absolute; right: 20px; top:40%"><a href="https://web.telegram.org/z/" target="_blank"><img style="height: 30px; width: 30px;" src="https://1000logos.net/wp-content/uploads/2021/04/Telegram-logo.png"></a></span></br>
+                <span style="font-size: 15px;position: absolute; right: 20px; top: 65%;" ><a href="https://www.linkedin.com/" target="_blank"><img style="height: 30px; width: 30px;" src="https://cdn-icons-png.flaticon.com/512/174/174857.png"></a></span>
+              </header>
+
+        </div>
+        <div style="position: absolute; text-align: center; margin-top: 150px; background-color:olive; height: 50px; width:100%;">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav" style="text-align: center; padding-top: 20px;">
+                    <a class="nav-link active" href="http://127.0.0.1:5500/home.html">
+                      Home
+                      <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-link" href="http://127.0.0.1:5500/addnewEmp.html" style="padding: 30px;">Add New</a>
+                    <a class="nav-link" href="http://127.0.0.1:5500/viewAllEmp.html" style="padding: 20px;">View</a>
+                    <a class="nav-link" href="http://127.0.0.1:5500/removeEmp.html" style="padding: 20px;">Remove</a>
+                    <a class="nav-link" href="http://127.0.0.1:5500/seacrhEmp.html" style="padding: 20px;">Search</a>
+                    <span class="navbar-date"></span>
+
+                  </div>
+                </div>
+              </nav>
+              
+               
+
+        </div>
+        <div class="Section-content" style="text-align: center; position: absolute; margin-top: 14%;margin-bottom:50% ; background-color: rgb(98, 113, 136); height: 60%; width:100%;">
+            <section>
+                <h1 style="font-size: 70px;">Welcome to Simple Employee Record System</h1>
+            </section>
+
+        </div>
+      
+         <div class="footer-section">
+        All Rights @2022
+
+    </div>
+        
+
+    </div>
+    <script>
+      let navbar_date = document.querySelector(".navbar-date");
+      let date = new Date();
+      let current_date =`Date;${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()} Time:${date.toLocaleString('en-US',{hour:"numeric",hour12:true})}`
+      navbar_date.innerHTML= current_date;
+      let year = document.getElementById("year");
+      year.textContent = date.getFullYear();
+    </script>
+   
+</body>
+</html>
